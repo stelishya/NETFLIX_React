@@ -1,0 +1,32 @@
+.watchPage {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    color: white;
+  }
+  
+  .videoContainer {
+    position: relative;
+    width: 100%;
+    /* padding-bottom: 56.25%; */
+  }
+  
+  .movieInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  }
+  
+  .movieInfo h1 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+  
+  .movieInfo p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #b3b3b3;
+  }

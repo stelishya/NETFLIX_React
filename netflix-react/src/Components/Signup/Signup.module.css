@@ -1,0 +1,140 @@
+.container{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.395) 60%, rgba(0, 0, 0, 0.639) 100%), url('/background.jpg') center/cover no-repeat;
+    min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* padding-top: 40px; */
+}
+
+.signupContainer {
+    display: flex;
+    /* margin:100px; */
+    padding:50px;
+  height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  /* background: rgba(0, 0, 0, 0.75); */
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  min-height: auto;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.leftPanel {
+  flex: 1;
+  background: url('/netflix-movies.avif') no-repeat center center;
+  background-size: contain;
+  background-color: rgba(255, 0, 0, 0.219); 
+}
+
+.rightPanel {
+  flex: 1;
+  padding: 4rem;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rightPanel img {
+  width:50px;
+  height:auto;
+}
+.rightPanel h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.rightPanel form {
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+}
+
+.nameFields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.rightPanel input[type='text'],
+.rightPanel input[type='email'],
+.rightPanel input[type='password'] {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #33333376;
+  color: #fff;
+  border: rgb(153, 150, 150) 1px solid;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.rightPanel input::placeholder {
+  color: #aaa;
+}
+
+.SignupBtn {
+  background-color: #e50914;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.SignupBtn:hover {
+  background-color: #f6121d;
+}
+
+.remember-me {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.social-login {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-login span {
+  color: #ccc;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signinLink {
+  font-size: 0.95rem;
+  color: #999;
+}
+
+.signinLink span {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0.3rem;
+}
+
+.signinLink span:hover {
+  text-decoration: underline;
+}

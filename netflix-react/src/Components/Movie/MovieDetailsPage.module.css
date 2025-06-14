@@ -1,0 +1,248 @@
+.container {
+  /* width: 100%; */
+  width:100vw;
+  min-height: 100vh;
+  color: white;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('path-to-your-background-image.jpg') no-repeat center center/cover; */
+}
+.detailsWrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.986);
+    /* border-radius: 16px; */
+    padding: 2rem;
+    padding-top: 7rem;
+    max-width: 1340px;
+    /* margin: 3rem auto; */
+  }
+  
+  /* .posterSection {
+    flex: 0 0 350px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  } */
+  
+  .poster {
+    width: 100%;
+    max-width: 350px;
+    background-size: contain;
+    /* border-radius: 12px; */
+    box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+  }
+  
+  .infoSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  /* background: linear-gradient(to top, #141414 0%, transparent 100%); */
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  max-width: 600px;
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.titleRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .rating {
+    font-size: 2rem;
+    color: #f6f6f5;
+    /* font-weight: bold; */
+    margin-left: 1rem;
+  }
+  .star {
+    color: #FFD700;
+    margin-left: 0.2rem;
+  }
+  .maturityRating{
+    font-size: 1rem;
+  }
+.meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #e6e6e6;
+}
+
+.match {
+  color: #46d369;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.playButton, .secondaryButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.playButton {
+  background-color: #e50914;
+  color: white;
+}
+
+.playButton:hover {
+  background-color: #f40612;
+}
+
+.secondaryButton, .iconButton, .volumeButton  {
+    background-color: rgba(42, 42, 42, 0.6);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0.5rem 1rem;
+}
+.secondaryButton:hover, .iconButton:hover, .volumeButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .iconButton, .volumeButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .genres {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .genreTag {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+    color: #e6e6e6;
+  }
+  
+  .details {
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    color: #b3b3b3;
+  }
+  
+  .detailRow {
+    margin-bottom: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .detailLabel {
+    color: #777;
+    min-width: 80px;
+  }
+  
+  .maturityRating {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    align-items: flex-start;
+  }
+  
+  .ratingBadge {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 3px solid #dcdcdc;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .ratingDetails {
+    flex: 1;
+  }
+  
+  .ratingDetails p {
+    margin-bottom: 0.5rem;
+    color: #b3b3b3;
+  }
+  
+  .ratingReasons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .ratingReasons li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .content {
+      margin-top: 60px;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .actions {
+      flex-wrap: wrap;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
