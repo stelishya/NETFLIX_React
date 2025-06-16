@@ -5,16 +5,23 @@ import searchLogo from "../../assets/search.png";
 import notificationLogo from '../../assets/notification.png'
 import avatar from '../../assets/avatar.png'
 import styles from "./Navbar.module.css";
+import {useAuth} from "../../context/AuthContext"
 
-function Navbar() {
+function Navbar(props) {
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
   const navigate = useNavigate();
+  const { user, logout } = useAuth();
 
-  const handleLogout = () => {
-    // Clear any user data from localStorage/sessionStorage if needed
-    localStorage.removeItem('token'); // Adjust according to your auth implementation
-    navigate('/login', { replace: true });
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      localStorage.removeItem('token'); 
+      navigate('/login', { replace: true });
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
   };
   useEffect(() => {
     const handleClickOutside = (event) => {
